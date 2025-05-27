@@ -5,4 +5,4 @@ Practice FastAPI
 Takes name, email, project ID, and port as string.
 
 # FastAPI Backend Business Logic
-Process.py takes the input and creates sentences and commnads that from input provided. 
+Process.py takes the input and creates sentences and commands that from input provided. 
