@@ -1,13 +1,8 @@
 
-def checkport_commands(info):
+def checkport_commands(name: str, email: str, project_id: str, port: str) -> list:
     command_array = []
     
-    author = info.author
-    email = info.email
-    project_id = info.project_id
-    port_string = info.ports
-    
-    author_string = f"This was created for {author}"
+    author_string = f"This was created for {name}"
     email_string = f"For questions and concerns contact {email}"
     project_string = f"This is for project number {project_id}"
 
@@ -18,7 +13,7 @@ def checkport_commands(info):
     #Add check optics (Nokia)
     command_array.append(f"show isis adj")
     command_array.append(f"show lag desc")
-    command_array.append(f"show port {port_string}")
-    command_array.append(f"show port {port_string} optical")
+    command_array.append(f"show port {port}")
+    command_array.append(f"show port {port} optical")
 
     return command_array

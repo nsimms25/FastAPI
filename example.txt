@@ -1,0 +1,6 @@
+curl -X POST "http://127.0.0.1:8000/submit/" -H "Content-Type: application/json" -d '{
+  "name": "Bob",
+  "email": "bob@example.com",
+  "project_id": "proj-007",
+  "port": "1/2/3"
+}'
