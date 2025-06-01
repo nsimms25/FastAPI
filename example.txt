@@ -6,19 +6,5 @@ curl -X POST "http://127.0.0.1:8000/submit/" -H "Content-Type: application/json"
   "name": "Bob",
   "email": "bob@example.com",
   "project_id": "proj-007",
-  "crl_lines": "BEFORE:
-  device1 1/1/1 <> device2 2/2/1
-  device1 1/1/2 <> device2 2/2/2
-  device1 1/1/3 <> device2 2/2/4
-  device1 ae1.1 <> device2 ae4.1
-  192.168.1.1/30 <> 192.168.1.2/30
-  1234 <> 9876
-  
-  AFTER: 
-  device2 3/1/1 <> device2 2/2/1
-  device2 3/1/2 <> device2 2/2/2
-  device2 3/1/3 <> device2 2/2/4
-  device2 ae1.1 <> device2 ae4.1
-  192.168.1.1/30 <> 192.168.1.2/30
-  3456 <> 9876"
+  "crl_lines": "BEFORE: \ndevice1 1/1/1 <> device2 2/2/1\ndevice1 1/1/2 <> device2 2/2/2\ndevice1 1/1/3 <> device2 2/2/4\ndevice1 ae1.1 <> device2 ae4.1\n192.168.1.1/30 <> 192.168.1.2/30\n1234 <> 9876\n\nAFTER: \ndevice2 3/1/1 <> device2 2/2/1\ndevice2 3/1/2 <> device2 2/2/2\ndevice2 3/1/3 <> device2 2/2/4\ndevice2 ae1.1 <> device2 ae4.1\n192.168.1.1/30 <> 192.168.1.2/30\n3456 <> 9876"
 }'
