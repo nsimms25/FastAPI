@@ -17,3 +17,14 @@ def checkport_commands(name: str, email: str, project_id: str, port: str) -> lis
     command_array.append(f"show port {port} optical")
 
     return command_array
+
+def verify_inputs(name: str, email: str, project_id: str, crl_lines: str):
+    output = []
+    output.append(f"The autoher name is: {name}")
+    output.append(f"The auther email is: {email}")
+    output.append(f"Here is the project ID: {project_id}")
+
+    output.append("Below are the crl lines that will be used.")
+    output.append(crl_lines)
+
+    return output
